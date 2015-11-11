@@ -1,4 +1,4 @@
-#!/usr/env/bin node
+#!/usr/bin/env node
 'use strict';
 
 var util = require('util');
