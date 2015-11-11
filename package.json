@@ -1,8 +1,10 @@
 {
   "name": "sofind",
   "version": "1.0.0",
+  "bin": {
+    "sofind": "index.js"
+  },
   "description": "A simple CLI tool to find good StackOverflow users.",
-  "main": "index.js",
   "dependencies": {
     "request": "^2.65.0",
     "yargs": "^3.29.0"
