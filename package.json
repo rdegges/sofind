@@ -1,0 +1,28 @@
+{
+  "name": "sofind",
+  "version": "1.0.0",
+  "description": "A simple CLI tool to find good StackOverflow users.",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.65.0",
+    "yargs": "^3.29.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdegges/sofind.git"
+  },
+  "keywords": [
+    "stack",
+    "overflow"
+  ],
+  "author": "Randall Degges",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/rdegges/sofind/issues"
+  },
+  "homepage": "https://github.com/rdegges/sofind#readme"
+}
