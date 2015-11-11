@@ -20,17 +20,20 @@ function main() {
 
   if (argv._.length === 0) {
     console.log('Usage: sofind <tag>');
+    process.exit(1);
   }
 
   var tag = encodeURIComponent(argv._[0]);
 
   request(util.format(SO_URL, tag), { encoding: null }, function(err, resp, body) {
       if (err) {
-        return callback(err);
+        console.log(err);
+        process.exit(1);
       }
 
       if (resp.statusCode != 200) {
-        return callback(new Error('SO API request failed with status code: ' + resp.statusCode));
+        console.log('SO API request failed with status code: ' + resp.statusCode);
+        process.exit(1);
       }
 
       zlib.gunzip(body, function(err, unzipped) {
