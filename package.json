@@ -7,7 +7,7 @@
   "description": "A simple CLI tool to find good StackOverflow users.",
   "dependencies": {
     "request": "^2.65.0",
-    "yargs": "^3.29.0"
+    "yargs": "^13.2.4"
   },
   "devDependencies": {},
   "scripts": {
